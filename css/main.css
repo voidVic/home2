@@ -1,0 +1,102 @@
+/*
+* Global Color Codes
+*/
+:root{
+	--midnight: #2c3e50;
+	--darkPrimary : #1976D2;
+	--primaryColor: #2196F3;
+	--accentColor: #FF5252;
+	--primaryText: #212121;
+	--secondaryText: #727272;
+	--colorLight: #ecf0f1;
+}
+.bgDark{
+	background-color: var(--darkPrimary);
+}
+.bgPrimary{
+	background-color: var(--primaryColor);
+}
+.accent{
+	background-color: var(--accentColor);
+}
+.fc-w{
+	color: #FFF;
+}
+body{
+	background-color: var(--midnight);
+	color: var(--primaryText);
+}
+
+/******Navigation******/
+
+.nav{
+	min-height:100%;
+	position: absolute;
+	padding:0;
+	box-shadow: 2px 0 5px #444;
+	background-color: var(--colorLight);
+	color: var(--midnight);
+}
+.nav .head-profile{
+	box-shadow: 0 1px 5px #444;
+	background-color: var(--colorLight);
+	padding-top: 20px;
+	background-image: url('https://www.whatswithtech.com/wp-content/uploads/2015/09/new-material-design-wallpaper-chrome.jpg');
+	background-size: cover;
+}
+.nav .circle-nav-img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	box-shadow: 1px 1px 5px #444;
+	margin: 0 auto;
+	background-image: url('https://pbs.twimg.com/profile_images/700534020065505280/Jj9L3AF8.jpg');
+	background-size: cover;
+}
+.nav .nav-title{
+	padding: 10px 0 5px 0;
+	text-align: center;
+}
+.nav .nav-link{
+	padding: 10px 10px 10px 20px;
+	box-shadow: 0px 1px 3px #2c3e50;/* #midnight */
+	cursor: pointer;
+	font-size: 15px;
+	transition: all 0.2s linear;
+}
+.nav .nav-link.inverted{
+	color: var(--colorLight);
+	background-color: var(--midnight);
+}
+
+
+/**********Box Style***********/
+
+
+.box{
+	width: 50px;
+	height: 50px;
+	background-color: var(--colorLight);
+	position: absolute;
+	transition: linear 0.4s;
+	opacity: 0.7;
+	box-shadow: 2px 2px 5px #444;
+	z-index:2;
+}
+.merged-box{
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+}
+
+/***********Home-content***********/
+
+.home-content{
+	position: absolute;
+	width: 700px;
+	height: 500px;
+	background-color: var(--colorLight);
+	top: 100px;
+	left: 50px;
+	z-index: 5;
+}

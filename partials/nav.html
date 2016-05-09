@@ -1,0 +1,10 @@
+<div ng-controller="navController as navCtrl">
+	<div class="head-profile">
+		<div class="circle-nav-img"></div>
+		<div class="nav-title" ng-bind="navCtrl.navTitle"></div>
+	</div>
+
+	<div ng-repeat="link in navCtrl.links track by $index" class="nav-link" ng-class="{'inverted': $index == navCtrl.currentNavIndex}">
+		<div ng-bind="link.name" ng-click="navCtrl.redirectTo($index)"></div>
+	</div>
+</div>
