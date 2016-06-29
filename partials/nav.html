@@ -4,7 +4,12 @@
 		<div class="nav-title" ng-bind="navCtrl.navTitle"></div>
 	</div>
 
-	<div ng-repeat="link in navCtrl.links track by $index" class="nav-link" ng-class="{'inverted': $index == navCtrl.currentNavIndex}">
-		<div ng-bind="link.name" ng-click="navCtrl.redirectTo($index)"></div>
+	<div ng-repeat="link in navCtrl.links track by $index" class="nav-link" ng-class="{'inverted': $index == navCtrl.currentNavIndex}"  ng-click="navCtrl.redirectTo($index)">
+		<div ng-bind="link.name"></div>
+	</div>
+
+	<!-- Static Navs -->
+	<div class="nav-link" ng-click="navCtrl.resumePreviewer()">
+		<div>Resume</div>
 	</div>
 </div>
